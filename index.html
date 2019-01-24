@@ -1,23 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Awesome Startup</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" />
-    <link href="https://cdn.rawgit.com/noelboss/featherlight/1.7.13/release/featherlight.min.css" type="text/css" rel="stylesheet" />
-    <link href="https://cdn.rawgit.com/noelboss/featherlight/1.7.13/release/featherlight.gallery.min.css" type="text/css" rel="stylesheet" />
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    
-    
 
-    
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <script src="https://cdn.rawgit.com/noelboss/featherlight/1.7.13/release/featherlight.min.js" ></script>
-    <script src="https://cdn.rawgit.com/noelboss/featherlight/1.7.13/release/featherlight.gallery.min.js"></script>
-    <script src="js/scripts.js"></script>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Awesome Startup</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Nunito|Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="container">
+
+    <h1 class="page-title">Awesome Startup Employee Directory</h1>
+
+    <div class="filters-group">
+      <label for="filters-search-input" class="filter-label">Search</label>
+      <input class="textfield filter__search js-shuffle-search" type="search" id="filters-search-input" placeholder="showing all">
+      <p class="filter-helptext">Filter by name or username.</p>
+    </div>
+
+    <div id="employee-directory">
+
+      <!-- <div class="employee">
+        <div class="employee-image">
+          <img src="https://randomuser.me/api/portraits/thumb/men/65.jpg" alt="">
+        </div>
+        <div class="employee-info">
+          <h2 class="employee-name">Darryl Hawkins the third and</h2>
+          <div class="employee-email">darryl.hawkins20@example.com</div>
+          <div class="employee-city">Portland</div>
+        </div>
+      </div> -->
+
+      <div class="loading">Loading...</div>
+
+    </div>
+  </div>
+
+  <div id="modal">
+      <div class="modal-navigation" id="previousModal"><i class="fas fa-chevron-left"></i></div>
+    <div class="employee">
+      <div class="close-modal"><i class="far fa-times-circle"></i></div>
+      <div class="employee-image">
+        <img src="https://randomuser.me/api/portraits/thumb/men/65.jpg" alt="">
+      </div>
+      <div class="employee-info">
+        <h2 class="employee-name">Darryl Hawkins the third and</h2>
+        <p class="employee-email">darryl.hawkins20@example.com</p>
+        <p class="employee-city">Portland</p>
+      </div>
+      <div class="employee-additional-info">
+        <p class="employee-phone">(593) 364-3249</p>
+        <p class="employee-address">851 scoville Portlant, OR 97754</p>
+        <p class="employee-birthday">Birthday: 04/26/1984</p>
+      </div>
+    </div>
+    <div class="modal-navigation" id="nextModal"><i class="fas fa-chevron-right"></i></div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+  <script src="js/scripts.js"></script>
 </body>
+
 </html>
