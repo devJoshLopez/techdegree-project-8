@@ -61,18 +61,18 @@ $(document).ready(function () {
     var filter = $(this)[0].value.toLowerCase().replace(/\s+/g, '');
 
     ajaxResults.forEach(result => {
-        if (result.name.first.includes(filter)) {
-          searched = true;
-          filteredResults.push(result);
-        }
-      });
+      if (result.name.first.includes(filter)) {
+        searched = true;
+        filteredResults.push(result);
+      }
+    });
 
     if (filteredResults === undefined || filteredResults.length == 0) {
-        $('#employee-directory').html('<div>No Results Found</div>');
+      $('#employee-directory').html('<div>No Results Found</div>');
     } else {
-        updateEmployeeDirectory(filteredResults);
+      updateEmployeeDirectory(filteredResults);
     }
-    
+
   });
 
   //   get the data from api
